@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">P03-BillCalculator</string>
+    <string name="amount">Amount</string>
+    <string name="no_svs">NO SVS</string>
+    <string name="paynow">PayNow</string>
+    <string name="cash">Cash</string>
+    <string name="enter_discount_percentage">Enter discount percentage</string>
+    <string name="enter_number_of_people">Enter number of people</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="gst">GST</string>
+    <string name="split">Split</string>
+    <string name="reset">Reset</string>
+    <string name="num_of_pax">Num of Pax</string>
+    <string name="discount">Discount(%)</string>
+</resources>
