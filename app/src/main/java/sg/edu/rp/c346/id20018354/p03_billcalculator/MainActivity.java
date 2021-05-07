@@ -57,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
                 int totald=tgsts*(100-discounts);
                 int splited=tgsts/numpeople;
 
-                String val = String.format("Total Bill: $%.2f\nEach pays $%.2f in ", totald,splited);
+                String val = String.format("Total Bill: $%.2f\nEach pays $%.2f ", totald,splited);
                 int checkedRadioId = type.getCheckedRadioButtonId();
                 if(checkedRadioId == R.id.radioButtonPaymentCash){
                     // Write the code when male selected
-                    val=val+"cash";
+                    val=val+"in cash";
 
                 } else{
                     // Write the code when female selected
@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
                         }
                 displaysen.setText(val);
+
             }
-        });
+        });System.out.println(displaysen.getText().toString());
     }
 }
