@@ -13,12 +13,12 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/editTtextAmount"
+        android:id="@+id/editTextNumberAmount"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/enter_amount"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:autofillHints="" />
 
     <TextView
@@ -29,16 +29,16 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/editTextPax"
-        style="Enter number of people"
+        android:id="@+id/editTextNumberPax"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/enter_number_of_people"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:autofillHints="" />
 
     <LinearLayout
+        android:id="@+id/servicecharge"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
@@ -68,13 +68,12 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/editTextDiscount"
+        android:id="@+id/editTextNumberDiscount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/enter_discount_percentage"
-        android:inputType="textPersonName"
-        android:autofillHints="" />
+        android:inputType="number" />
 
     <RadioGroup
         android:id="@+id/radioPaymentType"
@@ -118,5 +117,10 @@
             android:layout_weight="1"
             android:text="@string/reset" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/displayTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
